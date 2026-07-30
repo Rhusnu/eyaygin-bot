@@ -9,7 +9,7 @@ SAVED_COURSES_FILE = "saved_courses.txt"
 
 # --- KULLANICI AYARLARI ---
 # Aramak istediğin kursların anahtar kelimelerini buraya yaz (küçük/büyük harf duyarsız arar)
-KEYWORDS = ["KALORİFER", "BİLGİSAYAR"] 
+KEYWORDS = ["KALORİFER", "HAVUZ"] 
 
 # Filtrelemek istediğin şehirleri buraya yaz (birebir tablodaki gibi yazılmalı)
 TARGET_CITIES = ["İstanbul", "Eskişehir"]
@@ -62,7 +62,7 @@ def main():
             
             # Kursları Listele butonuna tıkla
             print("Kurslar listeleniyor...")
-            page.click("input[name='btnSearch']")
+            page.click("button[name='btnSearch']")
             
             # Yükleme ekranının bitmesini bekle (RadAjaxManager div'inin güncellenmesi)
             time.sleep(5) # AJAX'ın bitmesi için güvenli bir bekleme süresi
